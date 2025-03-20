@@ -1,13 +1,13 @@
 [versions]
 agp = "8.8.2"
+kotlin = "1.9.24"
 appcompat = "1.7.0"
 cardview = "1.0.0"
-coil = "2.7.0"
+coilVersion = "3.0.0"
 constraintlayout = "2.2.1"
 coreKtxVersion = "1.8.0"
 espressoCoreVersion = "3.4.0"
 gson = "2.11.0"
-kotlin = "1.9.24"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -23,21 +23,21 @@ mockitoInline = "5.2.0"
 mockitoKotlin = "2.2.0"
 recyclerview = "1.4.0"
 runner = "1.6.2"
+playServices-advertising = "23.2.0"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-core-ktx-v180 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
 androidx-espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
 androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
-coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilVersion" }
+coil3-coil = { module = "io.coil-kt.coil3:coil", version.ref = "coilVersion" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -54,6 +54,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
 mockito-kotlin = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin", version.ref = "mockitoKotlin" }
+googlePlayServices-advertising = { module = "com.google.android.gms:play-services-ads", version.ref = "playServices-advertising" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

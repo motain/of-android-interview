@@ -1,4 +1,4 @@
-package com.onefootball
+package com.onefootball.utils
 
 import android.content.Context
 import android.content.Intent

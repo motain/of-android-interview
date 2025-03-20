@@ -32,15 +32,18 @@ android {
 }
 
 dependencies {
-    implementation(libs.coil)
+    implementation(libs.coil3.coil)
+    implementation(libs.coil.network.okhttp)
 
     implementation libs.androidx.appcompat
     implementation libs.androidx.cardview
     implementation libs.androidx.constraintlayout
-    implementation libs.androidx.core.ktx.v180
+    implementation libs.androidx.core.ktx
     implementation libs.androidx.recyclerview
     implementation libs.gson
     implementation libs.kotlinx.coroutines.android
+
+    implementation libs.googlePlayServices.advertising
 
     testImplementation libs.junit
     testImplementation libs.mockito.core

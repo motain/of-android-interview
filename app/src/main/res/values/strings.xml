@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OneFootball-Android-Home-Task</string>
+    <string name="account_gms_app_id" translatable="false">ca-app-pub-8640977067669274~5759571056</string>
 </resources>
