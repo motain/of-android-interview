@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.onefootball.model.News
-import okhttp3.HttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
@@ -25,8 +25,8 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
         val news = newsItems[position]
 
         holder.titleView.text = news.title
-        holder.newsView.load(url = HttpUrl.parse(news.image_url))
-        holder.resourceImage.load(url = HttpUrl.parse(news.resource_url))
+        holder.newsView.load(news.image_url.toHttpUrlOrNull())
+        holder.resourceImage.load(news.resource_url.toHttpUrlOrNull())
         holder.resourceName.text = news.resource_name
         holder.itemView.setOnClickListener {
             Navigator(it.context).openNews(news)
